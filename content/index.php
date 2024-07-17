@@ -5,7 +5,7 @@ $fy = "&offset=" .$_GET['offset'];
 $zw = $_GET['query']; // 从 URL 参数获取 query
 $query = urlencode($zw); //编码中文参数
 // 设置目标 URL
-$url = "http://139.159.144.34:40180/search?query=" . $query .$fy;
+$url = "http://114.115.146.192:8080/search?query=" . $query .$fy;
 $data = httpget($url);
 $json = str_replace('\\', '', json_decode($data,true));
 echo json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
