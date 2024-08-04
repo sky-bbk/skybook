@@ -3,80 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网页标题</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-image: url('background-image-url');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding-top: 50px;
-            text-align: center;
-        }
-        .title {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .introduction {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-        }
-        .download-buttons {
-            margin-bottom: 40px;
-        }
-        .download-button {
-            display: inline-block;
-            margin: 5px;
-            padding: 12px 24px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .download-button:hover {
-            background-color: #0056b3;
-        }
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-        }
-        .qrcode img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>明月照大江 - 个人主页</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h1 class="title">更吸引人的网页标题</h1>
-    <p class="introduction">这里是网页的详细介绍，简洁明了地描述网页的核心内容或服务。</p>
-    <div class="download-buttons">
-        <a href="#" class="download-button">立即下载</a>
-        <a href="#" class="download-button">点击安装</a>
-    </div>
-</div>
-
-<div class="footer">
-    <p>感谢您的支持！</p>
-    <div class="qrcode">
-        <img src="appreciation-qrcode-url" alt="赞赏二维码" />
-    </div>
-</div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#features">功能</a></li>
+                <li><a href="#download">下载</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="home">
+            <h1>明月照大江 - 个人主页</h1>
+            <p>提供阅读3.0最新测试版下载，以及个人维护书源合集。</p>
+            <div class="download-buttons">
+				<a href="https://5475.kstore.space/legado_app_3.24.08031020_release.apk" class="download-button">阅读beta</a>
+				<a href="legado://import/?src=https://dns.jingluo.love/2024/66a8b9c583d7b.json" class="download-button">书源合集</a>
+			</div>
+        </section>
+        <!-- 更多内容 -->
+    </main>
+    <footer>
+        <p>感谢您的支持！</p>
+    </footer>
 </body>
 </html>
