@@ -1728,7 +1728,10 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
   .home-image-right img {
     vertical-align: top;
-    width: 85%;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
