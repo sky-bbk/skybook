@@ -43,7 +43,7 @@ nav a {
     max-width: 600px; /* 限制段落最大宽度，提高可读性 */
     margin: 0 auto 30px; /* 段落居中并设置下边距 */
     line-height: 1.6; /* 行高，提高文本可读性 */
-    color: #333; /* 文本颜色，根据背景色调整 */
+    color: #ffffff; /* 文本颜色，根据背景色调整 */
 }
 
 .download-buttons {
