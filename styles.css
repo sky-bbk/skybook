@@ -61,6 +61,34 @@ section {
     background-color: #1e88e5;
 }
 
+.download-buttons {
+    display: flex; /* 使用flex布局以使按钮水平排列 */
+    justify-content: center; /* 按钮居中显示 */
+    gap: 10px; /* 按钮之间的间隔 */
+}
+
+.download-button {
+    padding: 10px 20px; /* 按钮内边距 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    color: #ffffff; /* 文字颜色 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角边框 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 去除下划线 */
+    transition: background-color 0.3s; /* 背景颜色变化的过渡效果 */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+.download-button:focus {
+    outline: none; /* 去除焦点轮廓 */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* 焦点时的边框阴影 */
+}
+
 @media (max-width: 768px) {
     nav ul li {
         display: block;
