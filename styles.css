@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-image: https://dns.jingluo.love/2024/66af0d40df530.jpg;
+    background-image: url('img/bak.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
