@@ -30,40 +30,47 @@ nav a {
     font-weight: bold;
 }
 
-h1 {
-    text-align: center; /* 使标题文本居中 */
-    margin-top: 0; /* 可以设置上边距为0或根据需要调整 */
-    margin-bottom: 20px; /* 设置下边距，根据需要调整 */
-    font-size: 2.5em; /* 根据需要调整标题的字体大小 */
-    color: #ffffff; /* 标题文字颜色，这里假设与背景形成对比 */
+#home h1 {
+    text-align: center;
+    margin-top: 30px; /* 根据你的页面布局调整 */
+    margin-bottom: 20px; /* 根据你的页面布局调整 */
+    font-size: 2.5em; /* 根据需要调整字体大小 */
+}
+
+#home p {
+    text-align: center; /* 段落文本居中 */
+    font-size: 1em; /* 根据需要调整字体大小 */
+    max-width: 600px; /* 限制段落最大宽度，提高可读性 */
+    margin: 0 auto 30px; /* 段落居中并设置下边距 */
+    line-height: 1.6; /* 行高，提高文本可读性 */
+    color: #333; /* 文本颜色，根据背景色调整 */
 }
 
 .download-buttons {
-    display: flex; /* 使用flex布局以使按钮水平排列 */
-    justify-content: center; /* 按钮居中显示 */
-    gap: 10px; /* 按钮之间的间隔 */
+    display: flex;
+    justify-content: center; /* 按钮水平居中 */
+    gap: 15px; /* 按钮之间的间隔 */
+    margin-top: 20px; /* 按钮与上文内容的距离 */
 }
 
 .download-button {
-    padding: 10px 20px; /* 按钮内边距 */
-    font-size: 16px; /* 字体大小 */
+    padding: 10px 30px; /* 按钮内边距 */
+    font-size: 1em; /* 字体大小 */
     font-weight: bold; /* 字体加粗 */
     color: #ffffff; /* 文字颜色 */
     background-color: #007bff; /* 按钮背景颜色 */
     border: none; /* 无边框 */
     border-radius: 5px; /* 圆角边框 */
-    text-align: center; /* 文字居中 */
     text-decoration: none; /* 去除下划线 */
-    transition: background-color 0.3s; /* 背景颜色变化的过渡效果 */
+    transition: background-color 0.3s; /* 鼠标悬停时颜色变化的过渡效果 */
+    cursor: pointer; /* 鼠标悬停时显示指针手势 */
 }
 
-.download-button:hover {
-    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
-}
-
+.download-button:hover,
 .download-button:focus {
-    outline: none; /* 去除焦点轮廓 */
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* 焦点时的边框阴影 */
+    background-color: #0056b3; /* 鼠标悬停或聚焦时的背景颜色 */
+    text-decoration: none; /* 去除悬停时的下划线 */
+    outline: none; /* 去除聚焦轮廓 */
 }
 
 @media (max-width: 768px) {
