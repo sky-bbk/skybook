@@ -30,35 +30,12 @@ nav a {
     font-weight: bold;
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-.btn, .button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 30px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* 合并transition属性 */
-    cursor: pointer;
-}
-
-.btn {
-    background-color: #42a5f5;
-}
-
-.btn:hover {
-    background-color: #1e88e5;
+h1 {
+    text-align: center; /* 使标题文本居中 */
+    margin-top: 0; /* 可以设置上边距为0或根据需要调整 */
+    margin-bottom: 20px; /* 设置下边距，根据需要调整 */
+    font-size: 2.5em; /* 根据需要调整标题的字体大小 */
+    color: #ffffff; /* 标题文字颜色，这里假设与背景形成对比 */
 }
 
 .download-buttons {
