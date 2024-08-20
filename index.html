@@ -16,14 +16,13 @@
 <body>
     <header class="fixed">
         <nav>
-            <a href="https://skybook.pages.dev/"><svg width="200px" height="200px" viewBox="0 0 200 200"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect x="50" y="70" width="100" height="100" rx="20" ry="20" fill="#4A4A4A" />
-                    <rect x="70" y="70" width="60" height="20" rx="10" ry="10" fill="#6E6E6E" />
-                    <ellipse cx="125" cy="170" rx="15" ry="5" fill="#2E2E2E" />
-                    <rect x="165" y="100" width="20" height="60" fill="#4A4A4A" />
-                    <rect x="170" y="100" width="10" height="10" fill="#6E6E6E" />
-                </svg>
+            <a href="https://skybook.pages.dev/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <rect x="30" y="20" width="140" height="160" rx="10" ry="10" fill="#00796B" />
+                <rect x="30" y="20" width="70" height="160" fill="#009688" />
+                <rect x="100" y="20" width="70" height="160" fill="#B2DFDB" />
+                <ellipse cx="85" cy="180" rx="40" ry="5" fill="rgba(0,0,0,0.2)" />
+              </svg>
             </a>
             <ul>
                 <li>
@@ -73,26 +72,12 @@
             </button>
         </nav>
     </header>
-    <ul class="squares">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
     <main class="_pt-3">
-
         <!-- Header -->
         <div class="hero">
             <div class="_aos-top">
-
             </div>
-            <div class="_aos-bottom _txt-black _aos-done">
+            <div class="_aos-bottom _txt-black">
                 <h3><strong>明月照大江-个人主页</strong></h3>
                 <p>阅读APP和精品书源列表</p>
                 <p>本网站提供的书源仅供参考和学习使用，请下载后24小时内删除。</p>
@@ -101,7 +86,7 @@
         <section>
             <div class="grid" id="ext-grid" style="min-height: vh;">
                 <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                    <div class="card _aos-bottom">
                       <div class="badges"><div>软件</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">阅读BETA</h3>
@@ -116,11 +101,11 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                    <div class="card _aos-bottom">
                       <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
-                        <h3 class="_txt-center">朗读引擎-TTS接口</h3>
-                        <p>&nbsp;&nbsp;自制TTS听书接口，可切换发音人</p>
+                        <h3 class="_txt-center">TTS朗读引擎</h3>
+                        <p>&nbsp;&nbsp;自制TTS听书接口</p>
                         <div class="links"><a href="legado://import/httpTts?src=https://5475.kstore.space/httpTts.json" class="btn"
                                 target="_blank">
                                 <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                    <div class="card _aos-bottom">
                       <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/fqnovel.jpg" alt=""></div>
                         <h3 class="_txt-center">番茄书源</h3>
@@ -146,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                    <div class="card _aos-bottom">
                       <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">必看阅读</h3>
@@ -160,7 +145,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                    <div class="card _aos-bottom">
                       <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">笔趣阁</h3>
@@ -174,7 +159,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                    <div class="card _aos-bottom">
                       <div class="badges"><div>更多</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">更多书源合集</h3>
@@ -183,6 +168,10 @@
                 </div>
         </section>
     </main>
+    <button class="gt-link hide" id="gt-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z"></path></svg>
+    </button
+    <script src="./files/script.js"></script>
 </body>
-<script src="./files/script.js"></script>
 </html>

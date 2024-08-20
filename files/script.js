@@ -103,7 +103,7 @@ function aos() {
         t.items.forEach((item) => {
             observer.observe(item);
         });
-    }
+    } elseconsole.log("不支持")
 }
 
 function gotop() {
@@ -190,15 +190,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-function shuffle(array) {
-    var currentIndex = array.length,
-        temporaryValue, randomIndex;
-    while (0 !== currentIndex) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-    return array;
-}
+// 确保DOM已经加载完成
+document.addEventListener("DOMContentLoaded", () => {
+    // ...其他初始化代码...
+
+    // 初始化 aos 函数
+    new aos();
+});

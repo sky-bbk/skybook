@@ -1244,10 +1244,6 @@ img.circle {
     border-radius: 50%;
 }
 
-img.square {
-    border-radius: 0;
-}
-
 figure {
     text-align: center;
 }
@@ -1995,96 +1991,4 @@ svg.wave>path {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
     }
-}
-
-.squares {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-}
-.squares li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    background-image: url("../svg/puzzle.svg");
-    animation: rotate-fade 5s linear infinite;
-}
-
-.squares li:nth-child(0) {
-    left: 80%;
-    width: 130px;
-    height: 130px;
-    bottom: -130px;
-    animation-delay: 1s;
-}
-.squares li:nth-child(1) {
-    left: 90%;
-    width: 200px;
-    height: 200px;
-    bottom: -200px;
-    animation-delay: 2s;
-}
-.squares li:nth-child(2) {
-    left: 45%;
-    width: 140px;
-    height: 140px;
-    bottom: -140px;
-    animation-delay: 3s;
-}
-.squares li:nth-child(3) {
-    left: 5%;
-    width: 180px;
-    height: 180px;
-    bottom: -180px;
-    animation-delay: 4s;
-}
-.squares li:nth-child(4) {
-    left: 5%;
-    width: 225px;
-    height: 225px;
-    bottom: -225px;
-    animation-delay: 2.5s;
-}
-.squares li:nth-child(5) {
-    left: 60%;
-    width: 100px;
-    height: 100px;
-    bottom: -100px;
-    animation-delay: 15s;
-}
-.squares li:nth-child(6) {
-    left: 15%;
-    width: 230px;
-    height: 230px;
-    bottom: -230px;
-    animation-delay: 30s;
-}
-.squares li:nth-child(7) {
-    left: 40%;
-    width: 280px;
-    height: 280px;
-    bottom: -280px;
-    animation-delay: 4.5s;
-}
-.squares li:nth-child(8) {
-    left: 10%;
-    width: 180px;
-    height: 180px;
-    bottom: -180px;
-    animation-delay: 25s;
-}
-.squares li:nth-child(9) {
-    left: 45%;
-    width: 220px;
-    height: 220px;
-    bottom: -220px;
-    animation-delay: 20s;
 }
