@@ -711,7 +711,7 @@ button>svg,
 }
 
 /* ------------------- Card ------------------- */
-.card {
+/*.card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -720,6 +720,41 @@ button>svg,
     background: var(--bg-card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+}
+*/
+/* 默认样式 */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* 手机模式下的样式（通常适用于宽度小于768px的设备） */
+@media (max-width: 767px) {
+  .card {
+    height: auto; /* 根据内容调整高度 */
+    /* 其他针对手机模式的样式调整 */
+  }
+}
+
+/* 平板模式下的样式（通常适用于宽度在768px到1024px之间的设备） */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    height: 100%; /* 根据需要调整高度 */
+    /* 其他针对平板模式的样式调整 */
+  }
+}
+
+/* 桌面模式下的样式（通常适用于宽度大于1024px的设备） */
+@media (min-width: 1024px) {
+  .card {
+    height: 100%; /* 根据需要调整高度，使其在桌面模式下不会过长 */
+    /* 其他针对桌面模式的样式调整 */
+  }
 }
 
 .card>* {
@@ -755,7 +790,6 @@ button>svg,
 
 .badges {
     margin: 0;
-    margin-top: -2rem;
     height: 1.8rem;
     z-index: 1;
     position: absolute;

@@ -24,7 +24,6 @@
                     <rect x="165" y="100" width="20" height="60" fill="#4A4A4A" />
                     <rect x="170" y="100" width="10" height="10" fill="#6E6E6E" />
                 </svg>
-
             </a>
             <ul>
                 <li>
@@ -100,9 +99,10 @@
             </div>
         </div>
         <section>
-            <div class="grid" id="ext-grid" style="min-height: 100vh;">
+            <div class="grid" id="ext-grid" style="min-height: vh;">
                 <div class="col-4">
                     <div class="card _aos-bottom _aos-done">
+                      <div class="badges"><div>软件</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">阅读BETA</h3>
                         <p>&nbsp;&nbsp;阅读最新测试版，来自Github Action自动编译
@@ -117,6 +117,21 @@
                 </div>
                 <div class="col-4">
                     <div class="card _aos-bottom _aos-done">
+                      <div class="badges"><div>规则</div></div>
+                        <div class="img-w"><img src="./files/legado.png" alt=""></div>
+                        <h3 class="_txt-center">朗读引擎-TTS接口</h3>
+                        <p>&nbsp;&nbsp;自制TTS听书接口，可切换发音人</p>
+                        <div class="links"><a href="legado://import/httpTts?src=https://5475.kstore.space/httpTts.json" class="btn"
+                                target="_blank">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="#333" />
+                                </svg> &nbsp; 导入
+                            </a></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card _aos-bottom _aos-done">
+                      <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/fqnovel.jpg" alt=""></div>
                         <h3 class="_txt-center">番茄书源</h3>
                         <p>&nbsp;&nbsp;自制番茄小说书源，支持小说、漫画、听书，自动切换类型
@@ -132,6 +147,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card _aos-bottom _aos-done">
+                      <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">必看阅读</h3>
                         <p>&nbsp;&nbsp;必看阅读书源</p>
@@ -145,19 +161,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card _aos-bottom _aos-done">
-                        <div class="img-w"><img src="./files/legado.png" alt=""></div>
-                        <h3 class="_txt-center">当阅读</h3>
-                        <p>&nbsp;&nbsp;当阅读书源</p>
-                        <div class="links"><a href="legado://import/?src=https://5475.kstore.space/当阅读-JS.json" class="btn"
-                                target="_blank">
-                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="#333" />
-                                </svg> &nbsp; 导入
-                            </a></div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card _aos-bottom _aos-done">
+                      <div class="badges"><div>规则</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">笔趣阁</h3>
                         <p>&nbsp;&nbsp;笔趣阁书源</p>
@@ -171,6 +175,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card _aos-bottom _aos-done">
+                      <div class="badges"><div>更多</div></div>
                         <div class="img-w"><img src="./files/legado.png" alt=""></div>
                         <h3 class="_txt-center">更多书源合集</h3>
                         <p>&nbsp;&nbsp;欢迎关注书源作者<br>&nbsp;&nbsp;酷安：明月照大江<br>&nbsp;&nbsp;B站：明月-书源制作</p>
@@ -178,11 +183,6 @@
                 </div>
         </section>
     </main>
-    <button class="gt-link hide hidden" id="gt-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
-            <path d="M12 6H0l6-6z"></path>
-        </svg>
-    </button>
 </body>
-
+<script src="./files/script.js"></script>
 </html>
