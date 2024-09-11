@@ -520,7 +520,7 @@ main.full {
 .grid>div {
     flex: 0 0 auto;
     flex-shrink: 0;
-    width: 100%;
+    width: 120%;
     max-width: 100%;
     padding: 0.5rem;
 }
@@ -722,45 +722,31 @@ button>svg,
     box-shadow: var(--shadow);
 }
 */
-/* 默认样式 */
 .card {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 1rem;
   background: var(--bg-card);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
-/* 手机模式下的样式（通常适用于宽度小于768px的设备） */
 @media (max-width: 767px) {
   .card {
-    height: auto; /* 根据内容调整高度 */
-    /* 其他针对手机模式的样式调整 */
+    height: auto;
   }
 }
 
-/* 平板模式下的样式（通常适用于宽度在768px到1024px之间的设备） */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .card {
-    height: 100%; /* 根据需要调整高度 */
-    /* 其他针对平板模式的样式调整 */
-  }
-}
-
-/* 桌面模式下的样式（通常适用于宽度大于1024px的设备） */
-@media (min-width: 1024px) {
-  .card {
-    height: 100%; /* 根据需要调整高度，使其在桌面模式下不会过长 */
-    /* 其他针对桌面模式的样式调整 */
+    height: 100%;
   }
 }
 
 .card>* {
-    width: 100%;
-    margin: 0;
-    margin-top: .5rem;
+    width: 100%; /* 子元素宽度为父元素的90% */
+    margin: 0.5rem auto 0 auto; /* 上边距0.5rem，左右自动居中 */
 }
 
 .card>.img-w {
